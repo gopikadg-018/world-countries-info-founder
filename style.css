@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f5ff;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(135deg, #155eef, #6938ef);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+    flex: 1;
+}
+
+.container h2 {
+    margin-bottom: 12px;
+}
+
+.container > p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#searchForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#countryInput {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    padding: 13px 20px;
+    background: #155eef;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #1048bd;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#message {
+    color: #444;
+    margin: 15px 0;
+}
+
+.country-card {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.country-card[hidden] {
+    display: none;
+}
+
+#flag {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+    margin: 0 auto 20px;
+}
+
+.country-card h2 {
+    text-align: center;
+    color: #155eef;
+    margin-bottom: 20px;
+}
+
+.details p {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    overflow-wrap: anywhere;
+}
+
+#mapLink {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 12px 20px;
+    background: #198754;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+#mapLink:hover {
+    background: #146c43;
+}
+
+footer {
+    background: #172b4d;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    #searchForm {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .container {
+        margin: 25px auto;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Countries Info Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌍 World Countries Info Finder</h1>
+        <p>Explore countries around the world</p>
+    </header>
+
+    <main class="container">
+        <h2>Find Your Country</h2>
+        <p>Enter a country name to discover its details.</p>
+
+        <form id="searchForm">
+            <input
+                type="text"
+                id="countryInput"
+                placeholder="Enter country name (e.g. India)"
+                required
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <section id="countryCard" class="country-card" hidden>
+            <img id="flag" src="" alt="Country flag">
+
+            <h2 id="countryName"></h2>
+
+            <div class="details">
+                <p><strong>Capital:</strong> <span id="capital"></span></p>
+                <p><strong>Continent:</strong> <span id="continent"></span></p>
+                <p><strong>Region:</strong> <span id="region"></span></p>
+                <p><strong>Population:</strong> <span id="population"></span></p>
+                <p><strong>Currency:</strong> <span id="currency"></span></p>
+                <p><strong>Languages:</strong> <span id="languages"></span></p>
+                <p><strong>Country Code:</strong> <span id="countryCode"></span></p>
+            </div>
+
+            <a id="mapLink" href="#" target="_blank" rel="noopener noreferrer">
+                View on Map
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>World Countries Info Finder | Created using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
